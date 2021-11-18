@@ -23,10 +23,8 @@ recognition.addEventListener("result", (e) => {
       p.innerText = "I am fine";
       texts.appendChild(p);
     }
-    if (
-      text.includes("what's your name") ||
-      text.includes("what is your name")
-    ) {
+    if (text.includes("what's your name") || text.includes("what is your name"))
+     {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText = "My Name is chatBot";
